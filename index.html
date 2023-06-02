@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add Songs</title>
+	<link rel="stylesheet" href="contact.css">
+	<link rel="manifest" href="/manifest.json">
+	<!-- Link the web app manifest -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="icon" type="image/x-icon" href="icons/android-chrome-512x512.png">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+	<section class="topNav">
+        <div>
+          <img id="logo" src="images/logo.png">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+      </section>
+	<main>
+		<h1>Add Songs!</h1>
+		<div class = "contactBox">
+		
+			<div class="song">
+			<label for="name">Song Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Artist:</label>
+			<input type="text" id="song" name="song" required>
+			<button onclick="songFunction()">ADD SONG</button>
+			<div id="container"></div>
+		</div>
+	</div>
+	</main>
+	
+</body>
+<script src="javascript.js"></script>
+<footer>
+		<p>&copy; 2023 Song App. All Rights Reserved.</p>
+</footer>
+</html>
